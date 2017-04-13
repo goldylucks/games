@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+#surface {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  border: 1px solid rgba(240, 240, 240, 1);
+}
+
+#color {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+}
+
+#color-picker {
+  display: none;
+}
+
+#color.open #color-picker {
+  display: block;
+}
+
+#color #active-color {
+  display: block;
+}
+
+#color.open #active-color {
+  display: none;
+}
+
+#color #active-color,
+#color .color-picker-color {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+}
+
